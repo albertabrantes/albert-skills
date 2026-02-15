@@ -66,16 +66,26 @@ Authorization: Bearer {token from .env GHL_API_TOKEN}
 
 ## Your Workflow Each Session
 
-1. Read `SAFETY.md` — refresh on what you must never do
-2. Read `progress.json` — find the next `pending` task
-3. Read the task file from `tasks/`
-4. Do the work (docs review + safe API testing per task instructions)
-5. Write a report to `reports/`
-6. Fix the documentation if needed
-7. Log all API calls in `reports/api-call-log.json`
-8. Update `progress.json`
-9. Git commit: `audit: [task-id] - brief description`
-10. **Stop.** One task per session.
+**The full session workflow is defined in `AGENTS.md`.** Follow it exactly. The summary:
+
+**Startup (8 mandatory steps — do not skip any):**
+1. Read `.env` — load credentials
+2. Read `SAFETY.md` — refresh on forbidden actions and rate limits
+3. Read `CONTEXT.md` (this file) — project context and known issues
+4. Read `progress.json` — find the next `pending` task
+5. Read the task file from `tasks/`
+6. Read the documentation file being audited (path is in the task file)
+7. Read `templates/report-template.md` — your report must use this format
+8. Check `reports/` for previous task reports (may contain values you need)
+
+**Work (5 phases):**
+1. Official docs review — compare our docs against GHL official docs
+2. Live API testing — make the GET calls specified in the task
+3. Write report — using the template, to `reports/`
+4. Fix documentation — correct critical/major issues in the doc file
+5. Update progress + git commit
+
+**Then STOP.** One task per session.
 
 ## Known Issues Being Investigated
 
