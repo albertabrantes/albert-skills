@@ -1,0 +1,85 @@
+{
+  "project": "ghl-api-audit",
+  "version": "1.0.0",
+  "created_at": "2026-02-15",
+  "current_phase": "voice-ai",
+  "phases": {
+    "voice-ai": {
+      "name": "Voice AI API Audit",
+      "doc_file": "/Users/Shared/1-personal-projects/2-areas/ghl-api/areas/ghl/api/voice-ai.md",
+      "status": "in_progress",
+      "tasks": [
+        {
+          "id": "voice-ai-001",
+          "name": "Verify List Call Logs Endpoint",
+          "task_file": "tasks/voice-ai-001-call-logs-list.md",
+          "status": "pending",
+          "api_calls_budget": 3,
+          "api_calls_used": 0,
+          "issues_found": 0,
+          "started_at": null,
+          "completed_at": null,
+          "blocked_reason": null
+        },
+        {
+          "id": "voice-ai-002",
+          "name": "Verify Get Single Call Log Endpoint",
+          "task_file": "tasks/voice-ai-002-call-log-single.md",
+          "status": "pending",
+          "api_calls_budget": 3,
+          "api_calls_used": 0,
+          "issues_found": 0,
+          "started_at": null,
+          "completed_at": null,
+          "blocked_reason": null
+        },
+        {
+          "id": "voice-ai-003",
+          "name": "Verify Agent Config Endpoints (GET + PATCH)",
+          "task_file": "tasks/voice-ai-003-agent-config.md",
+          "status": "pending",
+          "api_calls_budget": 2,
+          "api_calls_used": 0,
+          "issues_found": 0,
+          "started_at": null,
+          "completed_at": null,
+          "blocked_reason": null
+        },
+        {
+          "id": "voice-ai-004",
+          "name": "Verify Conversations Endpoints (SMS + Search)",
+          "task_file": "tasks/voice-ai-004-conversations.md",
+          "status": "pending",
+          "api_calls_budget": 2,
+          "api_calls_used": 0,
+          "issues_found": 0,
+          "started_at": null,
+          "completed_at": null,
+          "blocked_reason": null
+        },
+        {
+          "id": "voice-ai-005",
+          "name": "Verify Scopes Reference & Cross-Cutting Concerns",
+          "task_file": "tasks/voice-ai-005-scopes-and-meta.md",
+          "status": "pending",
+          "api_calls_budget": 0,
+          "api_calls_used": 0,
+          "issues_found": 0,
+          "started_at": null,
+          "completed_at": null,
+          "blocked_reason": null
+        }
+      ]
+    }
+  },
+  "totals": {
+    "total_tasks": 5,
+    "pending": 5,
+    "in_progress": 0,
+    "completed": 0,
+    "blocked": 0,
+    "total_api_calls_budget": 10,
+    "total_api_calls_used": 0,
+    "total_issues_found": 0
+  }
+}

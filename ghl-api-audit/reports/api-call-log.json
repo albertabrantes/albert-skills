@@ -1,0 +1,5 @@
+{
+  "description": "Log of every API call made during the audit. EVERY call must be logged here BEFORE execution.",
+  "total_calls": 0,
+  "calls": []
+}
